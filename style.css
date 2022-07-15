@@ -1,43 +1,172 @@
+/* esercizio 1 ------------------ */
+
 .ex-1-square {
   width: 100px;
   height: 100px;
   border: 1px solid red;
 }
 
+.ex-1-square:hover {
+  background-color: red;
+  transition: all ease-in-out 0.8s;
+}
+
+/* / esercizio 1 ------------------ */
+
+/*  esercizio 2 ------------------ */
+
 .ex-2-square {
   width: 100px;
   height: 100px;
   background: red;
 }
+
+.ex-2-square:active {
+  width: 100%;
+  transition: all ease-in-out 0.8s;
+}
+
+/* / esercizio 2 ------------------ */
+
+/*  esercizio 3 ------------------ */
+
 .ex-3-square {
   width: 100px;
   height: 100px;
   background: red;
 }
+
+.ex-3-square:hover {
+  border-radius: 50%;
+  transition: all ease-in-out 0.8s;
+}
+
+/* / esercizio 3 ------------------ */
+
+/*  esercizio 4 ------------------ */
+
 .ex-4-square {
   width: 100px;
   height: 100px;
   background: red;
 }
+
+.ex-4-square:hover {
+  opacity: 0%;
+  transition: all ease-in-out 0.8s;
+}
+
+/* / esercizio 4 ------------------ */
+
+/*  esercizio 5 ------------------ */
+
 .ex-5-square {
   margin: 20px;
   width: 60px;
   height: 60px;
   background: red;
+
+  transition: all ease-in-out 0.8s;
 }
+
+.ex-5-square:hover {
+  transform: scale(2);
+}
+
+/* / esercizio 5 ------------------ */
+
+/*  esercizio 6-7-8 ------------------ */
+
 .ex-6-img,
 .ex-7-img,
 .ex-8-img {
   width: 500px;
+  transition: all ease-in-out 0.8s;
 }
+
+.ex-6-img:hover {
+  filter: grayscale(1);
+}
+
+.ex-7-img:hover {
+  filter: sepia(1);
+}
+
+.ex-8-img:hover {
+  filter: sepia(1);
+  border-radius: 20px;
+}
+
+/*  / esercizio 6-7-8 ------------------ */
+
+/*  esercizio 9 ------------------ */
 
 .ex-9-img {
   margin: 50px 100px;
   width: 400px;
+  transition: all ease-in-out 0.8s;
 }
+
+.ex-9-img:hover {
+  filter: sepia(1);
+  border-radius: 20px;
+  transform: scale(1.4);
+}
+
+/* / esercizio 9 ------------------ */
+
+/* / esercizio 10 ------------------ */
+
 .ex-10-icon {
   font-size: 60px;
+  animation-name: spinner;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+/*  esercizio 10 ------------------ */
+
+/* / esercizio 11 ------------------ */
+
+.ex-11-icon {
+  font-size: 60px;
+}
+
+.ex-11-icon:hover {
+  animation-name: reverse;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+}
+
+@keyframes reverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  25% {
+    transform: rotate(340deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/*  esercizio 11 ------------------ */
+
+/* / esercizio 2 ------------------ */
+
 .ex-11-icon {
   font-size: 60px;
 }
