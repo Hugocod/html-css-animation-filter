@@ -204,12 +204,12 @@
 
 .ex-12-button:hover .ex-12-top-white {
   animation-name: move-top;
-  animation-duration: 1s;
+  animation-duration: 2s;
 }
 
 .ex-12-button:hover .ex-12-bottom-white {
   animation-name: move-bottom;
-  animation-duration: 1s;
+  animation-duration: 2s;
 }
 
 @keyframes move-top {
@@ -232,4 +232,83 @@
   }
 }
 
-/* / esercizio 12 ------------------ */
+/* / esercizio 12 ------------------ *
+
+
+/*  esercizio 13 ------------------ */
+
+@keyframes move-360-top {
+  0% {
+    top: -10px;
+    left: 10%;
+  }
+
+  30% {
+    top: -10px;
+    left: calc(100% - 30px);
+  }
+
+  50% {
+    top: calc(100% - 10px);
+    left: calc(100% - 30px);
+  }
+
+  60% {
+    top: calc(100% - 10px);
+    left: -30px;
+  }
+
+  80% {
+    top: calc(100% - 10px);
+    left: -30px;
+  }
+
+  90% {
+    top: -10px;
+    left: -30px;
+  }
+}
+
+@keyframes move-360-bottom {
+  0% {
+    bottom: -10px;
+    right: 20%;
+  }
+
+  20% {
+    bottom: -10px;
+    right: calc(100% - 30px);
+  }
+
+  40% {
+    bottom: calc(100% - 10px);
+    right: calc(100% - 30px);
+  }
+
+  60% {
+    bottom: calc(100% - 10px);
+    right: -30px;
+  }
+
+  80% {
+    bottom: calc(100% - 10px);
+    right: -30px;
+  }
+
+  90% {
+    bottom: -10px;
+    right: -30px;
+  }
+}
+
+.ex-13-button:hover .ex-13-top-white {
+  animation-duration: 2s;
+  animation-name: move-360-top;
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+  animation-duration: 2s;
+  animation-name: move-360-bottom;
+}
+
+/* / esercizio 13 ------------------ */
